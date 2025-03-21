@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Twitter Insights",
+  "version": "1.0",
+  "description": "AI-powered Twitter analysis using Google Gemini",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "https://x.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [{
+    "matches": ["https://x.com/*"],
+    "js": ["content.js"]
+  }]
+}

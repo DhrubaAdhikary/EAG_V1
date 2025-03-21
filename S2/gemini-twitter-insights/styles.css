@@ -1,0 +1,50 @@
+body {
+  width: 400px;
+  padding: 16px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.primary-button {
+  background: #1a73e8;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.primary-button:hover {
+  background: #1557b0;
+}
+
+.loading {
+  color: #666;
+  font-style: italic;
+}
+
+.hidden {
+  display: none;
+}
+
+.summary {
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 12px 0;
+  line-height: 1.5;
+}
+
+.timestamp {
+  color: #666;
+  font-size: 0.9em;
+}

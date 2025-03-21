@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🤖 Gemini Twitter Insights</h1>
+    <div class="controls">
+      <button id="scanButton" class="primary-button">
+        <span class="icon">🔍</span> Scan Tweets
+      </button>
+      <div id="loading" class="loading hidden">Analyzing...</div>
+    </div>
+    <div id="results" class="results hidden">
+      <h2>Latest Insights</h2>
+      <div id="summaryContent" class="summary"></div>
+      <div class="timestamp">Last updated: <span id="lastUpdate"></span></div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
